@@ -34,6 +34,7 @@ footer p {
 footer ul li a {
     color: rgb(249, 248, 241);
     text-decoration-color: rgb(152, 71, 149);
+    overflow-wrap: anywhere;
 }
 
 footer ul li {
