@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C#</title>
+    <link rel="stylesheet" href="bootstrap-5.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/csharp.png" alt="logo" width="60" height="60"
+                        class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#tortenete">Története</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#nyelvcsalad">Nyelvcsalád</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#jellemzoi">C# Jellemzői</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <div class="row" id="tortenete">
+            <section class="col-12">
+                <h2 class="cim kozep nagy">Története</h2>
+            </section>
+            <section class="col-sm-12 col-md-6">
+                <article class="kartya">
+                    <h5 class="cim">Kialakulása</h5>
+                    <div class="kepkorbefoglalo">
+                        <div>
+                            <p>A 90-es években a <span class="felkover">Microsoft</span> egy saját Java keretkörnyezetet
+                                kibővített saját függvényeivel és szolgáltatásaival.</p>
+                            <p>Erre viszont nem volt engedélyük és szembe ment Java platformfüggetlen alapelvével ugyanis a
+                                Microsoft saját bővítményei miatt más rendszereken nem futott volna.</p>
+                            <p>Ennek következményeként a Microsoft elkezdett fejleszteni egy saját keretrendszert a <span
+                                    class="felkover">.NET</span>-et (dotnet). Ennek a keretrendszernek volt az első nyelve <span
+                                    class="felkover">C#</span> (szísárp). Anders Hejlsberg volt a C# fejlesztés vezetője.</p>
+                        </div>
+                        <img src="img/anders-hejlsberg.png" alt="Anders Hejlsberg a C# fejlesztés vezetője.">
+                    </div>
+                </article>
+                <article class="kartya">
+                    <h5 class="cim">.NET</h5>
+                    <p>A fejlesztés a 90-es évek végén indult el <span class="dolt"><span class="felkover">N</span>ext
+                            <span class="felkover">G</span>eneration <span class="felkover">W</span>indows <span
+                                class="felkover">S</span>ervices</span> címen. A .NET keretrendszer első verziója, a
+                        .NET Framework 1.0, <span class="felkover">2002</span>-ben jelent meg.</p>
+                    <p>A .NET keretrendszer két fő részből áll: a <span class="felkover">C</span>ommon <span
+                            class="felkover">L</span>anguage <span class="felkover">R</span>untime (CLR) és a <span
+                            class="felkover">F</span>ramework <span class="felkover">C</span>lass <span
+                            class="felkover">L</span>ibrary (FCL):</p>
+                    <ul>
+                        <li><span class="felkover" id="CLR">CLR</span>: Egy virtuális gép, amely futtatja a .NET nyelveken írt
+                            kódot. Ez felelős a kód fordításáért, futtatásáért és a memóriakezelésért.</li>
+                        <li><span class="felkover">FCL</span>: Egy hatalmas könyvtár, amely különböző funkciókat és
+                            szolgáltatásokat biztosít, például adatbázis-kezelést, hálózati kommunikációt és grafikai
+                            megjelenítést.</li>
+                    </ul>
+                </article>
+                <article class="kartya">
+                    <h5 class="cim">Név eredete</h5>
+                    <p>A "C#" név eredete érdekes. Sokan úgy gondolják, hogy a "#" jel a C++-hoz kapcsolódik, mivel
+                        hasonlít a két "+" jele "egymásra csúsztatásához". Valójában a "#" jel a zenei félhangokat
+                        szimbolizálja, mivel az ASCII karakterkészletben nincs megfelelő jel számára.</p>
+                    <p>A "C#" nyelv alapjaiban a C-hez kapcsolódik, de nem nyújt ugyanolyan nagy szabadságot, mint a
+                        C++, így valahol a két nyelv között helyezkedik el. A "#" jel pedig ezt a "C"-t emeli "fél
+                        hanggal" feljebb, hasonlóan a C++ "++" operátorához.</p>
+                </article>
+            </section>
+            <section class="col-sm-12 col-md-6">
+                <article class="kartya">
+                    <h5 class="cim">Fejlődése</h5>
+                    <p>A C# nyelv az évek során számos új funkcióval és fejlesztéssel bővült. A cél az volt, hogy a
+                        nyelvet még <span class="felkover">hatékonyabbá</span>, <span class="felkover">könnyebben
+                            használhatóvá</span> és <span class="felkover">rugalmasabbá</span> tegyék.</p>
+                    <div class="tablafoglalo">
+                        <table class="tabla">
+                            <caption>C# verziói</caption>
+                            <tr>
+                                <th>Verziószám</th>
+                                <th>Megjelenés </th>
+                                <th>Főbb újdonságok</th>
+                            </tr>
+                            <tr>
+                                <td>2.0</td>
+                                <td>2005. november</td>
+                                <td>Generikus és parciális típusok, anonim metódusok, iterátorok</td>
+                            </tr>
+                            <tr>
+                                <td>3.0</td>
+                                <td>2006. november</td>
+                                <td>Implicit módon megadott lokális változók, lambda-, és lekérdezés-kifejezések,
+                                    kifejezésfák, objektuminicializálók</td>
+                            </tr>
+                            <tr>
+                                <td>3.0</td>
+                                <td>2007. november</td>
+                                <td>Language Integrated Query, lambda-kifejezések, kiegészítő metódusok</td>
+                            </tr>
+                            <tr>
+                                <td>4.0</td>
+                                <td>2010. április</td>
+                                <td>Dinamikus kötés, opcionális paraméterek, generikus ko- és kontravariancia,
+                                    Párhuzamos programozás támogatás, PLINQ</td>
+                            </tr>
+                            <tr>
+                                <td>5.0</td>
+                                <td>2012. augusztus</td>
+                                <td>Aszinkron feladatok, párhuzamos programozás továbbfejlesztése</td>
+                            </tr>
+                            <tr>
+                                <td>6.0</td>
+                                <td>2015. július</td>
+                                <td>Null kondicionális operátor, statikus importálás, csak olvasható auto tulajdonságok
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7.0</td>
+                                <td>2017. március</td>
+                                <td>Out változók, Tuple típus, Pattern matching, helyi metódusok, throw kifejezések</td>
+                            </tr>
+                            <tr>
+                                <td>7.1</td>
+                                <td>2017. augusztus</td>
+                                <td>aszinkron Main metódus</td>
+                            </tr>
+                            <tr>
+                                <td>7.2</td>
+                                <td>2017. november</td>
+                                <td>private protected hozzáférési szint, számok tagolásához használható a _ karakter
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7.3</td>
+                                <td>2018. május</td>
+                                <td>stackalloc tömb inicializáció</td>
+                            </tr>
+                            <tr>
+                                <td>8.0</td>
+                                <td>2019. szeptember</td>
+                                <td>Nullable referencia típusok</td>
+                            </tr>
+                            <tr>
+                                <td>9.0</td>
+                                <td>2020. szeptember</td>
+                                <td>Rekordtípusok, init only setterek, mintaillesztés, kódgenerátor</td>
+                            </tr>
+                        </table>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <div class="row" id="nyelvcsalad">
+            <section class="col-12">
+                <h2 class="cim kozep nagy">Nyelvcsalád</h2>
+            </section>
+            <section class="col-sm-12 col-md-4">
+                <article class="kartya">
+                    <h5 class="cim">C</h5>
+                    <p>C nyelvet Dennis Ritchie fejlesztette ki az 1970-es években. Ez az <span class="felkover">OG C</span>.</p>
+                    <div class="kartyakepek">
+                        <img src="img/c.png" alt="c">
+                        <img src="img/c_hello_world.png" alt="Hello World kiírása C nyelvben.">
+                    </div>
+                </article>
+                <article class="kartya">
+                    <h5 class="cim">C++</h5>
+                    <p>Ez a C nyelv kiterjesztése, ami objektumorientált programozást lehetővé teszi.</p>
+                    <p>A ++ a programozásban egy használt rövidítést jelent, tehát <span class="felkover">C++ egyenlő C = C + 1-el</span>.</p>
+                    <div class="kartyakepek">
+                        <img src="img/c++.png" alt="c++">
+                        <img src="img/c++_hello_world.png" alt="Hello World kiírása C++ nyelvben.">
+                    </div>
+                </article>
+            </section>
+            <section class="col-sm-12 col-md-4">
+                <article class="kartya" id="Csharpfeketekartya">
+                    <h5 class="cim">C#</h5>
+                    <a href="#tortenete">Történetéről részletesebben fenntebb.</a>
+                    <a href="#jellemzoi">Jellemzőiről részletesebben lenntebb.</a>
+                    <div class="kartyakepek">
+                        <img src="img/csharp.png" alt="C#">
+                        <img src="img/csharp_hello_world.png" alt="Hello World kiírása C# nyelvben.">
+                    </div>
+                </article>
+                <article class="kartya">
+                    <h5 class="cim">Rust</h5>
+                    <p>Fejlesztése 2006-ban indult a Mozilla Researchnál (Firofox készítője). Az első stabil verziót, a Rust 1.0-t 2015-ben adták ki.</p>
+                    <p>Sok nagy cég használja például: <span class="felkover">Dropbox, Microsoft</span> stb. A Firefox 10%-a Rustban írodott.</p>
+                    <div class="kartyakepek">
+                        <img src="img/rust.png" alt="rust">
+                        <img src="img/rust_hello_world.png" alt="Hello World kiírása Rust nyelvben.">
+                    </div>
+                </article>
+            </section>
+            <section class="col-sm-12 col-md-4">
+                <article class="kartya">
+                    <h5 class="cim">Go (Golang)</h5>
+                    <p>A Go nyelvet a <span class="felkover">Google mérnökei</span>, Robert Griesemer, Rob Pike és Ken Thompson fejlesztették ki. A tervezés 2007-ben kezdődött, és a nyilvános bétaverziót, a Go 1-et 2012-ben adták ki.</p>
+                    <div class="kartyakepek">
+                        <img src="img/go.png" alt="Golang">
+                        <img src="img/go_hello_world.png" alt="Hello World kiírása Golang nyelvben.">
+                    </div>
+                </article>
+                <article class="kartya">
+                    <h5 class="cim">Kotlin</h5>
+                    <p>A Kotlin nyelvet a JetBrains nevű szoftverfejlesztő cég fejlesztette ki. A Kotlin projekt 2011-ben indult, és az első nyilvános verzió 2016-ban került ki</p>
+                    <p>Már a top <span class="felkover">1000 androidos alkalmazásból 950 Kotlin-t</span> használ Java helyett és a profi alkalmazások fele kotlint használ.</p>
+                    <div class="kartyakepek">
+                        <img src="img/kotlin.png" alt="Kotlin">
+                        <img src="img/kotlin_hello_world.png" alt="Hello World kiírása Kotlin nyelvben.">
+                    </div>
+                </article>
+            </section>
+        </div>
+        <div class="row" id="jellemzoi">
+            <section class="col-12">
+                <h2 class="cim kozep nagy">C# Jellemzői</h2>
+            </section>
+            <section class="col-sm-12 col-md-4">
+                <article class="kartya">
+                    <h5 class="cim">Erősen típusos</h5>
+                    <p>A változók típusát meg kell adni és nem változhat.</p>
+                    <p>Változók típusai:</p>
+                    <ul>
+                        <li><span class="felkover">int</span> - Egész szám</li>
+                        <li><span class="felkover">double</span> - Valós szám</li>
+                        <li><span class="felkover">char</span> - Egy karakter</li>
+                        <li><span class="felkover">string</span> - Szöveg</li>
+                        <li><span class="felkover">bool</span>- Igaz/Hamis</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="col-sm-12 col-md-4">
+                <article class="kartya">
+                    <h5 class="cim">Compileres nyelv</h5>
+                    <p>Az írt kódót egy kódfórdító lefordítja általában gép nyelvre (kódra).</p>
+                    <p>A C# esetében a .NET keretrendszerben lévő <a href="#CLR">CLR</a>.</p>
+                </article>
+            </section>
+            <section class="col-sm-12 col-md-4">
+                <article class="kartya">
+                    <h5 class="cim">Magas szintű</h5>
+                    <p>Az alacsony és magas szintű nyelvek jelentése az, hogy a gépi kódtól alacsony vagy magas mértékben tér el.</p>
+                    <p>Tehát a C# magas színtű nyelvnek számít.</p>
+                    <p>1-10-es (alacsony-magas) skálán programozási nyelvek:</p>
+                    <img src="img/skala.png" alt="Egy 1-10-es skála alacsony-magas színtű programozási nyelvekkel.">
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Források:</p>
+        <ul>
+            <li><a href="https://nyelvek.inf.elte.hu/leirasok/Csharp" target="_blank">https://nyelvek.inf.elte.hu/leirasok/Csharp</a></li>
+            <li><a href="https://hu.wikipedia.ord/wiki/C_Sharp" target="_blank">https://hu.wikipedia.ord/wiki/C_Sharp</a></li>
+            <li><a href="https://bard.google.com/chat/" target="_blank">https://bard.google.com/chat/</a></li>
+            <li><a href="https://www.w3schools.com/cs/cs_variables.php" target="_blank">https://www.w3schools.com/cs/cs_variables.php</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/List_of_C-family_programming_languages" target="_blank">https://en.wikipedia.org/wiki/List_of_C-family_programming_languages</a></li>
+            <li><a href="https://hu.wikipedia.org/wiki/.NET_keretrendszer" target="_blank">https://hu.wikipedia.org/wiki/.NET_keretrendszer</a></li>
+            <li><a href="https://chat.openai.com/" target="_blank">https://chat.openai.com/</a></li>
+            <li><a href="https://www.bing.com/search?form=NTPCHB&q=Bing+AI&showconv=1" target="_blank">https://www.bing.com/search?form=NTPCHB&q=Bing+AI&showconv=1</a></li>
+        </ul>
+    </footer>
+    <script src="bootstrap-5.3.1/js/jquery.js"></script>
+    <script src="bootstrap-5.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

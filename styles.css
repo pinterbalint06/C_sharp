@@ -1,0 +1,329 @@
+@font-face {
+    font-family: "RobotSlabCim";
+    src: url("betutipusok/RobotoSlab-Bold.ttf");
+}
+
+@font-face {
+    font-family: "RobotSlabNormal";
+    src: url("betutipusok/RobotoSlab-Regular.ttf");
+}
+
+* {
+    font-family: "RobotSlabNormal", "Helvetica", sans-serif;
+}
+
+.navbar {
+    background-color: rgb(152, 71, 149);
+    box-shadow: 0 7px 12px rgba(152, 71, 149, 0.7);
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: rgb(152, 71, 149);
+    box-shadow: 0 -7px 12px rgba(152, 71, 149, 0.7);
+    text-transform: uppercase;
+    padding: 0.5rem;
+    color: rgb(249, 248, 241);
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 1.3rem;
+}
+
+footer ul li a {
+    color: rgb(249, 248, 241);
+    text-decoration-color: rgb(152, 71, 149);
+}
+
+footer ul li {
+    color: rgb(249, 248, 241);
+}
+
+.dolt {
+    font-style: italic;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#tortenete, #jellemzoi {
+    padding: 0.6rem 0;
+    background-color: rgb(34, 21, 34);
+    color: white;
+}
+
+.kepkorbefoglalo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.kepkorbefoglalo img {
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+#nyelvcsalad {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(244, 247, 244);
+    box-shadow: inset 0px 27px 14px -10px rgba(33, 20, 33, 0.76),
+        inset 0px -27px 14px -10px rgba(33, 20, 33, 0.76);
+}
+
+.nagy {
+    font-variant: small-caps;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.felkover {
+    font-weight: bold;
+}
+
+.cim {
+    color: rgb(3, 2, 3);
+    font-size: 2.6em;
+    font-weight: 700;
+    font-family: "RobotSlabCim", "Times New Roman", sans-serif;
+}
+
+#tortenete > section > .cim, #jellemzoi > section > .cim {
+    color: rgb(249, 248, 241);
+}
+
+#tortenete .cim {
+    color: rgb(3, 2, 3);
+}
+
+#nyelvcsalad .cim {
+    color: rgb(3, 2, 3);
+}
+
+.kartya .cim {
+    font-size: 2em;
+    color: rgb(34, 21, 34);
+    text-align: center;
+}
+
+.kartyakepek {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.kartyakepek img:first-child {
+    width: 20%;
+    height: 20%;
+    margin-inline: 0.25rem;
+}
+
+.kartyakepek img:last-child {
+    width: 70%;
+    margin-inline: 0.25rem;
+    border: 0.3rem solid rgb(2, 2, 2);
+}
+
+a {
+    text-decoration-color: rgb(152, 71, 149);
+    text-decoration-thickness: 0.1px;
+    color: rgb(152, 71, 149);
+    font-variant: small-caps;
+}
+
+#Csharpfeketekartya > h5 ~ a {
+    font-size: 1.25rem;
+}
+
+#jellemzoi > section:nth-child(2) + section > .kartya {
+    background-color: rgb(2, 2, 2);
+}
+
+#jellemzoi > section:nth-child(2) + section > .kartya p,
+#jellemzoi > section:nth-child(2) + section > .kartya h5 {
+    color: rgb(249, 248, 241);
+}
+
+.kartya {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+#Csharpfeketekartya {
+    background-color: rgb(2, 2, 2);
+    border: 0.15rem solid rgb(100, 100, 100);
+}
+
+#Csharpfeketekartya .cim {
+    color: rgb(249, 248, 241);
+}
+
+.kartya p {
+    color: rgb(3, 2, 3);
+    margin: 0 0 10px;
+    text-align: justify;
+}
+
+ul>li {
+    color: rgb(3, 2, 3);
+}
+
+.kozep {
+    text-align: center;
+}
+
+.tabla {
+    border-radius: 2rem;
+    border-spacing: 0.5rem;
+    padding: 0.4rem;
+    border-collapse: collapse;
+    caption-side: top;
+    max-width: 100%;
+    width: 100%;
+}
+
+.tabla th {
+    background-color: rgb(77, 53, 77);
+}
+
+.tabla th:first-child {
+    background-color: rgb(77, 53, 77);
+    border-top-left-radius: 2rem;
+}
+
+.tabla th:last-child {
+    background-color: rgb(77, 53, 77);
+    border-top-right-radius: 2rem;
+}
+
+.tabla td,
+.tabla th {
+    padding: 8px;
+}
+
+.tablafoglalo {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.tablafoglalo::-webkit-scrollbar {
+    display: none;
+}
+
+.tabla th {
+    font-family: "RobotSlabCim", "Times New Roman", sans-serif;
+}
+
+.tabla>caption {
+    font-family: "RobotSlabCim", "Times New Roman", sans-serif;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+
+    #tortenete > :nth-child(2) .kartya:nth-child(1),
+    #tortenete > :nth-child(2) .kartya:nth-child(3) {
+        background-color: rgb(2, 2, 2);
+    }
+
+    #tortenete> :nth-child(2)>.kartya:nth-child(1) p,
+    #tortenete> :nth-child(2)>.kartya:nth-child(3) p {
+        color: rgb(249, 248, 241);
+    }
+
+    #tortenete> :nth-child(2)>.kartya:nth-child(1) .cim,
+    #tortenete> :nth-child(2)>.kartya:nth-child(3) .cim {
+        color: rgb(249, 248, 241);
+    }
+
+    #tortenete> :nth-child(2)>.kartya:nth-child(1) ul li,
+    #tortenete> :nth-child(2)>.kartya:nth-child(3) ul li {
+        color: rgb(249, 248, 241);
+    }
+
+    .tabla {
+        color: rgb(249, 248, 241);
+        background-color: rgb(2, 2, 2);
+    }
+
+    .tabla>caption {
+        color: rgb(3, 2, 3);
+    }
+
+    .tabla tr:not(:first-child):not(:last-child) td,
+    .tabla tr td:not(:first-child):not(:last-child) {
+        border: 1px solid rgb(249, 248, 241);
+    }
+}
+
+@media (max-width: 768px) {
+
+    #tortenete> :nth-child(2)>.kartya:nth-child(2),
+    #tortenete> :nth-child(3)>.kartya:nth-child(1) {
+        background-color: rgb(2, 2, 2);
+    }
+
+    #tortenete> :nth-child(2)>.kartya:nth-child(2) p,
+    #tortenete> :nth-child(3)>.kartya:nth-child(1) p {
+        color: rgb(249, 248, 241);
+    }
+
+    #tortenete> :nth-child(2)>.kartya:nth-child(2) .cim,
+    #tortenete> :nth-child(3)>.kartya:nth-child(1) .cim {
+        color: rgb(249, 248, 241);
+    }
+
+    #tortenete> :nth-child(2)>.kartya:nth-child(2) ul li,
+    #tortenete> :nth-child(3)>.kartya:nth-child(1) ul li {
+        color: rgb(249, 248, 241);
+    }
+
+    .tabla {
+        color: rgb(3, 2, 3);
+        background-color: rgb(249, 248, 241);
+    }
+
+    .tabla>caption {
+        color: rgb(249, 248, 241);
+    }
+
+    .tabla th {
+        color: rgb(249, 248, 241);
+    }
+
+    .tabla tr:not(:first-child):not(:last-child) td,
+    .tabla tr td:not(:first-child):not(:last-child) {
+        border: 1px solid rgb(2, 2, 2);
+    }
+}
